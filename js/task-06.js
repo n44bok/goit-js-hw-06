@@ -4,7 +4,7 @@ inputEl.addEventListener('blur', onInputBlur);
 
 
 function onInputBlur(event) {
-    if (event.currentTarget.value.length == inputEl.dataset.length) {
+    if (event.currentTarget.value.length === parseInt(event.currentTarget.dataset.length)) {
         inputEl.classList.add('valid');
         inputEl.classList.remove('invalid');
         
@@ -13,3 +13,4 @@ function onInputBlur(event) {
         inputEl.classList.remove('valid');
     }
 }
+

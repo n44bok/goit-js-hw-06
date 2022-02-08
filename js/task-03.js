@@ -26,7 +26,7 @@ return `<li><img class="img" src="${option.url}" alt="${option.alt}"></li>`;
 
   console.log(elements)
 
-  ul.insertAdjacentHTML('afterBegin', elements)
+ul.insertAdjacentHTML('afterBegin', elements.join(""));
 
 
 
